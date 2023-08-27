@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.SignalR;
+using System.Linq;
 
 namespace WebDiscordBack.Hubs
 {
@@ -26,11 +27,22 @@ namespace WebDiscordBack.Hubs
         {
             if (_connections.TryGetValue(Context.ConnectionId, out UserConnection connection))
             {
-                _connections.Remove(Context.ConnectionId);
+
                 Clients.Group(connection.Room)
                     .SendAsync("ReceiveMessage", $"{connection.Room} room", $"{connection.User} has left");
+                if (UserCams.list.ContainsKey(Context.ConnectionId))
+                {
+                    Clients.Group(connection.Room)
+                        .SendAsync("TurnOffCamera", UserCams.list[Context.ConnectionId]);
+                }
 
+                _connections.Remove(Context.ConnectionId);
                 SendConnectedUsers(connection.Room);
+
+                if(_connections.Values.Count == 0)
+                {
+                    UserCams.list.Clear();
+                }
             }
             return base.OnDisconnectedAsync(exception);
         }
@@ -44,15 +56,46 @@ namespace WebDiscordBack.Hubs
             await Clients.Group(connection.Room).SendAsync("ReceiveMessage", $"{connection.Room} room",
                 $"{connection.User} has joined to {connection.Room}");
 
+            await Clients.Group(connection.Room).SendAsync("UsersInRoom", connection.User);
+
             await SendConnectedUsers(connection.Room);
         }
 
         public Task SendConnectedUsers(string room)
         {
-            var users = _connections.Values
-                .Where(c => c.Room == room)
-                .Select(c => c.User);
+            IEnumerable<string> users;
+
+            users = _connections.Values
+            .Where(c => c.Room == room)
+            .Select(c => c.User);
+
             return Clients.Group(room).SendAsync("UsersInRoom", users);
+        }
+
+        public async Task SendTurnOnCamera(string room, string userId)
+        {
+            await Groups.AddToGroupAsync(Context.ConnectionId, room);
+            await Clients.Group(room).SendAsync("TurnOnCamera", userId);
+        }
+
+        public async Task TurnOnCamera(UserConnection connection)
+        {
+            if (!UserCams.list.ContainsKey(Context.ConnectionId))
+            {
+                UserCams.list.Add(Context.ConnectionId, connection.User);
+            }
+
+            await Clients.Group(connection.Room).SendAsync("TurnOnCameraAllCams", connection.User);
+        }
+
+        public async Task TurnOffLeavedCamera(UserConnection connection)
+        {
+            if (UserCams.list.ContainsKey(Context.ConnectionId))
+            {
+                await Clients.Group(connection.Room)
+                    .SendAsync("TurnOffCamera", UserCams.list[Context.ConnectionId]);
+            }
+            UserCams.list.Remove(Context.ConnectionId);
         }
     }
 }

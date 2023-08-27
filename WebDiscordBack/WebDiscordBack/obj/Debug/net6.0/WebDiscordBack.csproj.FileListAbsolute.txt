@@ -4,13 +4,11 @@ E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\bin\Debu
 E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\bin\Debug\net6.0\WebDiscordBack.deps.json
 E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\bin\Debug\net6.0\WebDiscordBack.runtimeconfig.json
 E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\bin\Debug\net6.0\WebDiscordBack.dll
-E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\bin\Debug\net6.0\ref\WebDiscordBack.dll
 E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\bin\Debug\net6.0\WebDiscordBack.pdb
 E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\bin\Debug\net6.0\Microsoft.OpenApi.dll
 E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\obj\Debug\net6.0\WebDiscordBack.csproj.AssemblyReference.cache
 E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\obj\Debug\net6.0\WebDiscordBack.GeneratedMSBuildEditorConfig.editorconfig
 E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\obj\Debug\net6.0\WebDiscordBack.AssemblyInfoInputs.cache
 E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\obj\Debug\net6.0\WebDiscordBack.AssemblyInfo.cs
@@ -25,3 +23,5 @@ E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\obj\Debu
 E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\obj\Debug\net6.0\ref\WebDiscordBack.dll
 E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\obj\Debug\net6.0\WebDiscordBack.pdb
 E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\obj\Debug\net6.0\WebDiscordBack.genruntimeconfig.cache
+E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\bin\Debug\net6.0\ref\WebDiscordBack.dll
+E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\WebDiscordBack\obj\Debug\net6.0\WebDiscordBack.csproj.AssemblyReference.cache

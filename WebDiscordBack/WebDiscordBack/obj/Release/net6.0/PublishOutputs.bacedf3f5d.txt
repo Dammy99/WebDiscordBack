@@ -1,0 +1,11 @@
+E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\publish\WebDiscordBack.exe
+E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\publish\appsettings.Development.json
+E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\publish\appsettings.json
+E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\publish\WebDiscordBack.dll
+E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\publish\WebDiscordBack.deps.json
+E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\publish\WebDiscordBack.runtimeconfig.json
+E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\publish\WebDiscordBack.pdb
+E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\publish\Microsoft.OpenApi.dll
+E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\publish\Swashbuckle.AspNetCore.Swagger.dll
+E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Work\GitHub\DiscordFull\WebDiscordBack\WebDiscordBack\publish\Swashbuckle.AspNetCore.SwaggerUI.dll

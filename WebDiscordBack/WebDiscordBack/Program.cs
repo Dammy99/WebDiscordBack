@@ -27,8 +27,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-app.UseCors(builder => builder.WithOrigins("http://localhost:5174"
-    , "https://64de5b56657b783786726ca0--darling-travesseiro-5ae1c0.netlify.app")
+app.UseCors(builder => builder.WithOrigins("http://localhost:5174", "http://localhost:5173"
+    , "https://darling-travesseiro-5ae1c0.netlify.app")
                               .AllowCredentials()
                               .AllowAnyHeader()
                               .AllowAnyMethod());
